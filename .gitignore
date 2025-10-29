@@ -1,0 +1,11 @@
+# Dependencies
+/node_modules
+
+# Build output
+/dist
+
+# Scratch directory
+/jules-scratch/
+
+# Logs
+*.log
