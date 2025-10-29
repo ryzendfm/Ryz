@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FileFlow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // These global variables are expected to be populated by the environment.
+      // For local development, you can replace them with your actual Firebase config.
+      window.__firebase_config = {
+        apiKey: "your-api-key",
+        authDomain: "your-auth-domain",
+        projectId: "your-project-id",
+        storageBucket: "your-storage-bucket",
+        messagingSenderId: "your-messaging-sender-id",
+        appId: "your-app-id"
+      };
+      window.__app_id = "your-app-id";
+      window.__initial_auth_token = ""; // Can be an empty string
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="../dist/bundle.js"></script>
+  </body>
+</html>

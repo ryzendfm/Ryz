@@ -1,0 +1,20 @@
+{
+  "name": "fileflow",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^9.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "esbuild": "^0.17.11",
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "start": "http-server ./dist",
+    "build": "esbuild src/index.tsx --bundle --outfile=dist/bundle.js --loader:.js=jsx --loader:.ts=tsx"
+  }
+}
